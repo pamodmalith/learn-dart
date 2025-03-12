@@ -1,8 +1,4 @@
 void main() {
-  // A Map stores key-value pairs
-  Map<String, int> ages = {"Alice": 25, "Bob": 30, "Charlie": 28};
-  print(ages); // Output: {Alice: 25, Bob: 30, Charlie: 28}
-
   Map<String, String> countries = {
     "India": "New Delhi",
     "USA": "Washington D.C.",
@@ -17,4 +13,12 @@ void main() {
 
   scores.remove("Alex"); // Remove a key
   print(scores); // Output: {John: 90, Emma: 85}
+
+  Map<String, int> ages = {'John': 25, 'Alice': 30, 'Bob': 22};
+
+  print('${ages.entries.first.key}');
+
+  for (var entry in ages.entries) {
+    print('${entry.key}: ${entry.value}'); // Prints key-value pairs
+  }
 }
